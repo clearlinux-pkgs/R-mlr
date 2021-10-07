@@ -4,7 +4,7 @@
 #
 Name     : R-mlr
 Version  : 2.19.0
-Release  : 1
+Release  : 2
 URL      : https://cran.r-project.org/src/contrib/mlr_2.19.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/mlr_2.19.0.tar.gz
 Summary  : Machine Learning in R
@@ -12,11 +12,13 @@ Group    : Development/Tools
 License  : BSD-2-Clause
 Requires: R-mlr-lib = %{version}-%{release}
 Requires: R-BBmisc
+Requires: R-ParamHelpers
 Requires: R-XML
 Requires: R-backports
 Requires: R-checkmate
 Requires: R-data.table
 Requires: R-ggplot2
+Requires: R-parallelMap
 Requires: R-stringi
 BuildRequires : R-BBmisc
 BuildRequires : R-ParamHelpers
@@ -58,10 +60,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1633371787
+export SOURCE_DATE_EPOCH=1633644614
 
 %install
-export SOURCE_DATE_EPOCH=1633371787
+export SOURCE_DATE_EPOCH=1633644614
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
