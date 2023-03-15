@@ -4,7 +4,7 @@
 #
 Name     : R-mlr
 Version  : 2.19.1
-Release  : 8
+Release  : 9
 URL      : https://cran.r-project.org/src/contrib/mlr_2.19.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/mlr_2.19.1.tar.gz
 Summary  : Machine Learning in R
